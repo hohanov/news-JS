@@ -33,3 +33,28 @@ footer .copyright a:hover {
 footer .copyright:before {
     content: '©';
 }
+
+.news, .sources, header {
+    margin: 0 auto;
+}
+
+@media (min-width: 600px) {
+    .news, .sources, header {
+        max-width: 960px;
+    }
+}
+@media (min-width: 960px) {
+    .news, .sources, header {
+        max-width: 900px;
+    }
+}
+@media (min-width: 1264px) {
+    .news, .sources, header {
+        max-width: 1185px;
+    }
+}
+@media (min-width: 1904px) {
+    .news, .sources, header {
+        max-width: 1785px;
+    }
+}
