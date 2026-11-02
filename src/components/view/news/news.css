@@ -1,3 +1,7 @@
+.news {
+    margin-top: 10px!important;
+}
+
 .news__item {
     display: flex;
     flex-direction: column;
@@ -162,5 +166,29 @@
 
     .news__item.alt .news__meta-details {
         padding-left: 25px;
+    }
+}
+
+@media (min-width: 960px) {
+    .news {
+        columns: 320px;
+        column-gap: 1.5rem;
+    }
+
+    .news__item,
+    .news__item.alt {
+        flex-direction: column;
+        max-width: none;
+        margin: 0 0 1.5rem;
+    }
+
+    .news__item .news__meta {
+        flex-basis: auto;
+        height: 200px;
+    }
+
+    .news__item .news__description {
+        flex-basis: auto;
+        flex-grow: 1;
     }
 }
